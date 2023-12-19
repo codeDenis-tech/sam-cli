@@ -44,7 +44,7 @@ jobs:
         run: |
           zip -r ${{ github.workspace }}/${{ matrix.dir }}.zip .
 
-      - name: Upload Artifact to Github
+      - name: Upload Artifact to GitHub repo
         uses: actions/upload-artifact@v3
         with:
           name: function_code_${{ matrix.dir }}
